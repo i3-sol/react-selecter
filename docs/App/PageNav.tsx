@@ -113,30 +113,7 @@ class PageNav extends Component<RouteComponentProps, NavState> {
 export default NavSection;
 
 const Nav = (props: JSX.IntrinsicElements['div']) => (
-  <div
-    css={{
-      [smallDevice]: {
-        backgroundColor: 'rgba(255, 255, 255, 0.96)',
-        boxShadow: 'inset 0 -1px 0 rgba(0, 0, 0, 0.1)',
-        display: 'flex',
-        fontSize: 13,
-        marginLeft: -appGutter,
-        marginRight: -appGutter,
-        overflowX: 'auto',
-        WebkitOverflowScrolling: 'touch',
-      },
-
-      [largeDevice]: {
-        display: 'block',
-        float: 'left',
-        paddingBottom: contentGutter,
-        paddingTop: contentGutter,
-        width: navWidth,
-        zIndex: 1,
-      },
-    }}
-    {...props}
-  />
+  
 );
 
 interface NavItemProps {
